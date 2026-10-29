@@ -1,0 +1,27 @@
+{
+  "dataset": "Synthetic patterned images of simulated defects",
+  "mode": "vision",
+  "seed": 42,
+  "split": "group by simulated source",
+  "features": [
+    "mean",
+    "std",
+    "q90",
+    "q99",
+    "vertical_edges",
+    "horizontal_edges",
+    "center_brightness",
+    "bright_ratio"
+  ],
+  "models": {
+    "Logistic Regression": {
+      "pr_auc": 1,
+      "f1": 1
+    },
+    "Random Forest": {
+      "pr_auc": 1,
+      "f1": 1
+    }
+  },
+  "limitation": "Synthetic results only; not verified on a real-world production dataset."
+}
